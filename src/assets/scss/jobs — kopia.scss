@@ -1,0 +1,68 @@
+.jobs {
+    background-color: lightcyan;
+    
+   padding: 5%; 
+
+   &__row {
+       display: flex;
+       background-color: $ftLightGrayishCyan;
+       border-radius: 1em;
+       margin-bottom: 2%;
+   }
+    /*
+    &__row {
+ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-content: center;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    
+            background-color: white;
+            
+            &__img {
+                flex: 0 1 auto; 
+                align-self: auto;
+            }
+    
+            &__h {
+    
+                
+                flex: 0 1 auto; 
+                align-self: auto;
+    
+                &__new {
+                    background-color: $ddarkcyan;
+                    color: white;
+                }
+                &__featured {
+                    background-color: black;
+                    color: white;
+                }
+    
+            }
+    
+            &__lang {
+                flex: 0 1 auto; 
+                align-self: auto;
+            }
+        }
+        &__new {
+            background-color: $ddarkcyan;
+            color: white;
+        }
+        &__featured {
+            background-color: $vdarkGrayishCyan;
+            color: white;
+        }
+    
+        @media (min-width: 110.77em) {
+            padding: 10%;
+    
+        }
+        */
+
+}

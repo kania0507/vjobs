@@ -1,35 +1,19 @@
 .jobs {
-    background-color: $darkGrayishCyan;
-   
-    padding: 5%;
+    background-color: lightcyan;
+    
+   padding: 5%; 
 
-    &__row {
-        background-color: white;
-        display: inline-block; 
-        &__h {
-            &__new {
-                background-color: $ddarkcyan;
-                color: white;
-            }
-            &__featured {
-                background-color: black;
-                color: white;
-            }
+   &__row {
+       display: flex;
+       background-color: $ftLightGrayishCyan;
+       border-radius: 1em;
+       margin-bottom: 2%;
 
-        }
-    }
-    &__new {
-        background-color: $ddarkcyan;
-        color: white;
-    }
-    &__featured {
-        background-color: $vdarkGrayishCyan;
-        color: white;
-    }
-
-    @media (min-width: 110.77em) {
-        padding: 10%;
-
-    }
-
+       flex-direction: row;
+       flex-wrap: nowrap;
+       align-content: center;
+       -webkit-align-items: flex-start;
+       -ms-flex-align: start;
+       align-items: flex-start;
+   }
 }
