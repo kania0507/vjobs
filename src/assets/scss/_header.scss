@@ -1,0 +1,27 @@
+.header {  
+    position: relative;
+    //background-color:  $ddarkcyan; 
+    width: 100%;;
+    
+    background-image: url('../../../images/bg-header-desktop.svg'); 
+
+    //-webkit-mask-image: url('../../../images/bg-header-desktop.svg');
+    //mask-image: url('../../../images/bg-header-desktop.svg');
+
+     
+    height: 15vh;
+    width: 100%;
+
+    &__filters { 
+        position: relative;
+        //bottom: -10vh;
+        bottom: -5vh;
+       // margin: 0 auto;
+        text-align: center;
+
+        padding: 5%;
+        background-color: red;
+
+        
+    }
+}

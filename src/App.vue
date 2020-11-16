@@ -1,5 +1,10 @@
 <template>
   <div id="app">  
+    <header class="header">
+      <div class="header__filters">
+        <span class="clear">Clear</span>
+      </div>
+      </header>
     <Jobs v-bind:jobs="json"></Jobs>
   </div>
 </template> 

@@ -1,0 +1,35 @@
+.jobs {
+    background-color: $darkGrayishCyan;
+   
+    padding: 5%;
+
+    &__row {
+        background-color: white;
+        display: inline-block; 
+        &__h {
+            &__new {
+                background-color: $ddarkcyan;
+                color: white;
+            }
+            &__featured {
+                background-color: black;
+                color: white;
+            }
+
+        }
+    }
+    &__new {
+        background-color: $ddarkcyan;
+        color: white;
+    }
+    &__featured {
+        background-color: $vdarkGrayishCyan;
+        color: white;
+    }
+
+    @media (min-width: 110.77em) {
+        padding: 10%;
+
+    }
+
+}
