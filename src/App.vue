@@ -2,10 +2,13 @@
   <div id="app">  
     <header class="header">
       <div class="header__filters">
-        <span class="clear">Clear</span>
+        <span v-if="allFilters.length>0" class="header__filters--left" >
+          <a v-for="(filter, i) in allFilters" v-bind:key="i" href="#">{{ filter }}[X]</a>
+        </span>
+        <span class="header__filters--right"><a href="#" @click="removeFilters">Clear</a></span>
       </div>
       </header>
-    <Jobs v-bind:jobs="json"></Jobs>
+    <Jobs v-bind:jobs="myJson"></Jobs>
   </div>
 </template> 
 <script>
@@ -19,14 +22,23 @@ export default {
     Jobs
   },
   
-  data:  function () {
+  data: function () {
     return {
-      msg: 'Welcome to Your Vue.js App',
-      json 
+      json,
+      myJson:[],
+      allFilters: [] 
     }
   },
   mounted: function() {  
     //console.log(json);
+    if (this.myJson.length==0)
+      this.myJson=this.json;
+  },
+  methods: { 
+    removeFilters: function() {
+      this.allFilters = [];
+      this.myJson=json;
+    }
   }
 }
 </script>

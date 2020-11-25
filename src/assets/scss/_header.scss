@@ -16,5 +16,35 @@
         padding: 2%; 
         background-color: $ftLightGrayishCyan;
         border-radius: 0.7em;
+
+        &--left {
+            float: left;
+
+            a {
+                padding-right: 0.5em;
+
+                
+                   
+                    background-color: lightcyan;
+                    color: $ddarkcyan;
+                    border-radius: 1em;
+                    padding: 0.5em;
+     
+                    &:hover {
+                     background-color:$ddarkcyan;
+                     color: lightcyan;
+                     border-radius: 1em;
+                    padding: 0.5em;
+                    }
+    
+                    
+                    
+
+
+            }
+        }
+        &--right {
+            float: right;
+        }
     }
 }
