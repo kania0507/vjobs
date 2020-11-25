@@ -1,6 +1,6 @@
 <template>
     <div class="jobs">
-     <div class="jobs__row" v-for="(job, index) in activejobs" v-bind:key="index"  >
+     <div class="jobs__row" v-for="(job, index) in activejobs" v-bind:key="index"  v-bind:class = "(job.featured)?'jobs__row__featured':''"  >
        <div class="jobs__row__img"><img  v-bind:src= 'job.logo' /></div>
        <div class="jobs__row__h"><h1>{{ job.company }} <span class="jobs__row__h__new" v-if='job.new'>NEW!</span>
         <span class="jobs__row__h__featured" v-if='job.featured'>FEATURED!</span></h1>
